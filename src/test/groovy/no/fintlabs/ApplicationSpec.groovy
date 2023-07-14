@@ -6,7 +6,7 @@ class ApplicationSpec extends Specification {
 
     def "Application is created"() {
         when:
-        def application = new Application()
+        def application = new Application(Scheduler)
 
         then:
         application
