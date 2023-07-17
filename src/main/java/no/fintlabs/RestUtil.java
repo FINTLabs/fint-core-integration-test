@@ -18,7 +18,6 @@ public class RestUtil {
                 .uri(uri)
                 .retrieve()
                 .bodyToMono(clazz);
-
     }
 
 }

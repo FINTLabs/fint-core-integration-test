@@ -3,10 +3,14 @@ package no.fintlabs;
 
 import lombok.extern.slf4j.Slf4j;
 import no.fint.model.resource.utdanning.elev.ElevResources;
+import no.fintlabs.model.HateosResponse;
+import no.fintlabs.model.Informasjon;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Slf4j
@@ -32,5 +36,4 @@ public class UdanningFetcher {
                 .doOnError(error -> log.error("Noe gikk feil"))
                 .subscribe();
     }
-
 }
