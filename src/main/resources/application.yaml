@@ -1,4 +1,5 @@
 fint:
+  cache-status-endpoints: /utdanning/elev, /administrasjon/kodeverk, /arkiv/kodeverk, /felles/kodeverk
   client:
     username:
     password:

@@ -24,6 +24,7 @@ public class UdanningFetcher {
     }
 
     @Scheduled(cron = "0 */5 7-16 * * *")
+    //@PostConstruct
     private void test3() {
         restUtil
                 .get(ElevResources.class, "/utdanning/elev/elev")
